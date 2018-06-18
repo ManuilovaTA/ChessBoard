@@ -9,6 +9,7 @@ namespace ChessBoard
     class ChessBoard
     {
         int height, width;
+        int result;
         public void BuildChessBoard(int h, int w)
         {
             height = h;
@@ -36,7 +37,7 @@ namespace ChessBoard
         {
             Console.WriteLine("Enter Height & width: ");
             string parametr = Console.ReadLine();
-            int result;
+            
             if(!int.TryParse(parametr, out result))
             {
                 Console.WriteLine("Введен неправильный формат!");
