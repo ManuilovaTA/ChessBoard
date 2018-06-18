@@ -11,7 +11,14 @@ namespace ChessBoard
         static void Main(string[] args)
         {
             ChessBoard chB = new ChessBoard();
-            chB.BuildChessBoard(chB.Input(), chB.Input());
+
+            Console.WriteLine("Enter Height: ");
+            int h = chB.Input();
+
+            Console.WriteLine("Enter width: ");
+            int w = chB.Input();
+
+            chB.BuildChessBoard(h, w);
 
             Console.ReadKey();
         }

@@ -34,13 +34,12 @@ namespace ChessBoard
         }
 
         public int Input()
-        {
-            Console.WriteLine("Enter Height & width: ");
+        {            
             string parametr = Console.ReadLine();
             
             if(!int.TryParse(parametr, out result))
             {
-                Console.WriteLine("Введен неправильный формат!");
+                Console.WriteLine("The entered format is incorrect!");
                 Input();
             }
             return result;
